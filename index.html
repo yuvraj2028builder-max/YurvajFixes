@@ -1,0 +1,2181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yuvraj designs fast, mobile-first, quote-ready websites for local service businesses."
+    />
+    <meta
+      name="keywords"
+      content="web designer for local businesses, service business website, quote-ready website, Yuvraj web designer"
+    />
+    <meta name="author" content="Yuvraj" />
+    <meta name="theme-color" content="#f4ff55" />
+    <meta property="og:title" content="Yuvraj — Websites that turn visits into quote requests" />
+    <meta
+      property="og:description"
+      content="Premium websites for local service companies, built to make calling and requesting a quote easy."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:alt" content="Yuvraj web design portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Yuvraj — Quote-ready websites for local service businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #11110f;
+        --paper: #f5f4ee;
+        --white: #fff;
+        --acid: #dfff3f;
+        --acid-dark: #b7d91f;
+        --muted: #6c6b64;
+        --line: #d8d7cf;
+        --radius: 22px;
+        --max: 1180px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 20;
+        opacity: 0.022;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      .brand {
+        font-family: "Syne", sans-serif;
+      }
+
+      .wrap {
+        width: min(calc(100% - 36px), var(--max));
+        margin: 0 auto;
+      }
+
+      .section {
+        padding: 82px 0;
+      }
+
+      .dark {
+        color: var(--white);
+        background: var(--ink);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--acid);
+        box-shadow: 0 0 0 4px rgb(223 255 63 / 18%);
+      }
+
+      .section-head {
+        display: grid;
+        gap: 14px;
+        margin-bottom: 40px;
+      }
+
+      .section-head h2 {
+        max-width: 800px;
+        margin-bottom: 0;
+        font-size: clamp(36px, 8vw, 72px);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+
+      .section-head p {
+        max-width: 550px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .dark .section-head p {
+        color: #aaa99f;
+      }
+
+      .btn {
+        min-height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid var(--ink);
+        border-radius: 999px;
+        padding: 0 23px;
+        color: var(--white);
+        background: var(--ink);
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 0 rgb(17 17 15 / 14%);
+      }
+
+      .btn-acid {
+        border-color: var(--acid);
+        color: var(--ink);
+        background: var(--acid);
+      }
+
+      .btn-ghost {
+        color: var(--ink);
+        background: transparent;
+      }
+
+      .btn-arrow::after {
+        content: "↗";
+        font-size: 19px;
+      }
+
+      header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+      }
+
+      .nav {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-size: 23px;
+        font-weight: 800;
+        letter-spacing: -0.06em;
+      }
+
+      .brand-dot {
+        color: var(--acid-dark);
+      }
+
+      .nav-links {
+        display: none;
+        align-items: center;
+        gap: 28px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .nav-links a:not(.btn):hover {
+        text-decoration: underline;
+        text-decoration-color: var(--acid-dark);
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px;
+      }
+
+      .nav .btn {
+        min-height: 43px;
+        padding: 0 18px;
+        font-size: 14px;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        min-height: 770px;
+        padding: 132px 0 70px;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 4%;
+        right: -125px;
+        width: 340px;
+        height: 340px;
+        border: 68px solid var(--acid);
+        border-radius: 50%;
+        opacity: 0.95;
+        z-index: -1;
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 42px;
+      }
+
+      .hero h1 {
+        max-width: 920px;
+        margin-bottom: 25px;
+        font-size: clamp(53px, 13.8vw, 124px);
+        line-height: 0.84;
+        letter-spacing: -0.075em;
+      }
+
+      .hero h1 span {
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+      }
+
+      .hero h1 span::after {
+        content: "";
+        position: absolute;
+        right: -0.02em;
+        bottom: 0.01em;
+        left: -0.02em;
+        height: 0.22em;
+        background: var(--acid);
+        z-index: -1;
+        transform: rotate(-1.5deg);
+      }
+
+      .hero-bottom {
+        display: grid;
+        gap: 26px;
+      }
+
+      .hero-copy {
+        max-width: 510px;
+        margin-bottom: 0;
+        color: #4e4d47;
+        font-size: clamp(18px, 5vw, 22px);
+        line-height: 1.45;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .hero-note {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .hero-note strong {
+        color: var(--ink);
+      }
+
+      .pulse {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #2cc96b;
+        box-shadow: 0 0 0 5px rgb(44 201 107 / 15%);
+      }
+
+      .ticker {
+        overflow: hidden;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: var(--white);
+      }
+
+      .ticker-track {
+        width: max-content;
+        display: flex;
+        gap: 28px;
+        padding: 15px 0;
+        animation: marquee 26s linear infinite;
+        font-family: "Syne", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .ticker-track span {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .ticker-track span::after {
+        content: "✦";
+        color: var(--acid-dark);
+      }
+
+      @keyframes marquee {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .problem-grid {
+        display: grid;
+        gap: 1px;
+        border: 1px solid #33332f;
+        background: #33332f;
+      }
+
+      .problem-card {
+        padding: 30px 25px 34px;
+        background: var(--ink);
+      }
+
+      .problem-card .number {
+        margin-bottom: 50px;
+        color: var(--acid);
+        font-family: "Syne", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .problem-card h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 1.05;
+        letter-spacing: -0.035em;
+      }
+
+      .problem-card p {
+        margin-bottom: 0;
+        color: #aaa99f;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        gap: 22px;
+      }
+
+      .case-grid {
+        display: grid;
+        gap: 22px;
+      }
+
+      .case-study {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        transition: transform 240ms ease, box-shadow 240ms ease;
+      }
+
+      .case-study:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 22px 50px rgb(17 17 15 / 10%);
+      }
+
+      .case-visual {
+        padding: 14px 14px 0;
+        background: var(--ink);
+      }
+
+      .real-site {
+        color: white;
+      }
+
+      .real-site .site-hero {
+        position: relative;
+        isolation: isolate;
+      }
+
+      .real-site .site-hero::after {
+        content: "";
+        position: absolute;
+        right: -45px;
+        bottom: -75px;
+        width: 210px;
+        height: 210px;
+        border: 32px solid currentColor;
+        border-radius: 50%;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .anita-site {
+        background: #173e38;
+      }
+
+      .anita-site .site-hero {
+        background: linear-gradient(135deg, #173e38, #285f55);
+      }
+
+      .anita-site .site-button,
+      .anita-site .mini-cta {
+        color: #173e38;
+        background: #e7f49c;
+      }
+
+      .phoenix-site {
+        color: #17191d;
+        background: #f1ebe2;
+      }
+
+      .phoenix-site .site-hero {
+        background: linear-gradient(135deg, #f4eee5 0 67%, #ef6a3a 67%);
+      }
+
+      .phoenix-site .site-button,
+      .phoenix-site .mini-cta {
+        color: white;
+        background: #17191d;
+      }
+
+      .case-info {
+        padding: 24px;
+      }
+
+      .case-title-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .case-title-row h3 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: -0.04em;
+      }
+
+      .case-location {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .case-fact {
+        display: grid;
+        grid-template-columns: 92px 1fr;
+        gap: 12px;
+        margin: 0;
+        padding: 13px 0;
+        border-top: 1px solid var(--line);
+        font-size: 14px;
+      }
+
+      .case-fact strong {
+        font-size: 11px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .case-disclaimer {
+        margin: 20px 0 0;
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .project-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        transition: transform 240ms ease, box-shadow 240ms ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 22px 50px rgb(17 17 15 / 10%);
+      }
+
+      .project-visual {
+        padding: 14px 14px 0;
+        background: #deddd6;
+      }
+
+      .browser {
+        overflow: hidden;
+        border: 1px solid rgb(17 17 15 / 18%);
+        border-bottom: 0;
+        border-radius: 13px 13px 0 0;
+        box-shadow: 0 16px 32px rgb(0 0 0 / 12%);
+        background: white;
+      }
+
+      .browser-bar {
+        height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0 10px;
+        background: #f4f3ef;
+      }
+
+      .browser-bar i {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #c8c7c1;
+      }
+
+      .site {
+        position: relative;
+        height: 240px;
+        overflow: hidden;
+      }
+
+      .site-nav {
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        font-size: 7px;
+        font-weight: 700;
+      }
+
+      .site-logo {
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .site-button {
+        border-radius: 30px;
+        padding: 5px 8px;
+      }
+
+      .site-hero {
+        height: 202px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 25px 20px;
+      }
+
+      .site-hero small {
+        margin-bottom: 8px;
+        font-size: 7px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .site-hero b {
+        max-width: 220px;
+        font-family: "Syne", sans-serif;
+        font-size: 27px;
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+      }
+
+      .site-hero p {
+        max-width: 180px;
+        margin: 9px 0 12px;
+        font-size: 8px;
+      }
+
+      .site-hero .mini-cta {
+        border-radius: 30px;
+        padding: 7px 11px;
+        font-size: 7px;
+        font-weight: 800;
+      }
+
+      .clean-site {
+        color: #143b35;
+        background: #edf9f4;
+      }
+
+      .clean-site .site-hero {
+        background: radial-gradient(circle at 85% 35%, #abd9c7 0 22%, transparent 22.5%),
+          radial-gradient(circle at 84% 40%, #d8eee5 0 36%, transparent 36.5%);
+      }
+
+      .clean-site .site-button,
+      .clean-site .mini-cta {
+        color: white;
+        background: #196354;
+      }
+
+      .plumb-site {
+        color: white;
+        background: #0c255d;
+      }
+
+      .plumb-site .site-nav {
+        background: #0a1f50;
+      }
+
+      .plumb-site .site-hero {
+        background: linear-gradient(120deg, transparent 55%, rgb(64 146 255 / 30)),
+          linear-gradient(#0c255d, #123a84);
+      }
+
+      .plumb-site .site-button,
+      .plumb-site .mini-cta {
+        color: #0c255d;
+        background: #ffcb45;
+      }
+
+      .land-site {
+        color: #f8f1de;
+        background: #23351e;
+      }
+
+      .land-site .site-hero {
+        background: radial-gradient(ellipse at 88% 120%, #7f9f61 0 32%, transparent 32.5%),
+          linear-gradient(135deg, #283f22, #162415);
+      }
+
+      .land-site .site-button,
+      .land-site .mini-cta {
+        color: #23351e;
+        background: #d6e88e;
+      }
+
+      .wash-site {
+        color: #17191c;
+        background: #f3f5f7;
+      }
+
+      .wash-site .site-hero {
+        background: linear-gradient(90deg, transparent 61%, rgb(22 106 255 / 16) 61%),
+          linear-gradient(155deg, transparent 75%, #176aff 75%);
+      }
+
+      .wash-site .site-button,
+      .wash-site .mini-cta {
+        color: white;
+        background: #176aff;
+      }
+
+      .project-info {
+        padding: 24px;
+      }
+
+      .project-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      .project-meta h3 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: -0.04em;
+      }
+
+      .concept-tag {
+        flex: none;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 8px;
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .feature-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin: 16px 0 22px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .feature-list li {
+        border-radius: 6px;
+        padding: 5px 8px;
+        background: #efeee8;
+        color: #55544f;
+        font-size: 12px;
+      }
+
+      .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .project-link::after {
+        content: "→";
+        transition: transform 180ms ease;
+      }
+
+      .project-link:hover::after {
+        transform: translateX(5px);
+      }
+
+      .compare {
+        position: relative;
+        height: min(75vw, 560px);
+        min-height: 370px;
+        overflow: hidden;
+        border: 7px solid var(--white);
+        border-radius: var(--radius);
+        box-shadow: 0 20px 60px rgb(0 0 0 / 18%);
+        user-select: none;
+      }
+
+      .compare-side {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+
+      .compare-before {
+        color: #222;
+        background: #e9e9e9;
+      }
+
+      .compare-after {
+        width: 62%;
+        color: white;
+        background: #152319;
+      }
+
+      .compare-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: min(calc(100vw - 50px), 1166px);
+        height: 100%;
+        display: grid;
+        align-content: center;
+        padding: 28px;
+      }
+
+      .compare-before .compare-content {
+        justify-items: center;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .before-box {
+        width: min(520px, 80%);
+        padding: 24px;
+        border: 1px solid #aaa;
+        background: #fff;
+      }
+
+      .before-box h3 {
+        font-family: Arial, sans-serif;
+        font-size: clamp(22px, 5vw, 40px);
+      }
+
+      .before-box button {
+        border: 1px solid #888;
+        padding: 8px 14px;
+        color: black;
+        background: #ddd;
+      }
+
+      .after-layout {
+        max-width: 700px;
+      }
+
+      .after-layout small {
+        color: var(--acid);
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .after-layout h3 {
+        max-width: 650px;
+        margin: 14px 0 16px;
+        font-size: clamp(37px, 9vw, 78px);
+        line-height: 0.92;
+        letter-spacing: -0.065em;
+      }
+
+      .after-layout p {
+        max-width: 460px;
+        color: #b8c1b9;
+      }
+
+      .after-layout span {
+        display: inline-block;
+        margin-top: 8px;
+        border-radius: 999px;
+        padding: 11px 17px;
+        color: #111;
+        background: var(--acid);
+        font-weight: 800;
+      }
+
+      .compare-label {
+        position: absolute;
+        top: 16px;
+        z-index: 4;
+        border-radius: 999px;
+        padding: 7px 11px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .label-before {
+        right: 16px;
+        background: #fff;
+      }
+
+      .label-after {
+        left: 16px;
+        color: #111;
+        background: var(--acid);
+      }
+
+      .compare-range {
+        position: absolute;
+        z-index: 6;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        opacity: 0;
+        cursor: ew-resize;
+      }
+
+      .compare-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 62%;
+        z-index: 5;
+        width: 3px;
+        background: white;
+        pointer-events: none;
+      }
+
+      .compare-handle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 52px;
+        height: 52px;
+        display: grid;
+        place-items: center;
+        border: 3px solid white;
+        border-radius: 50%;
+        color: white;
+        background: var(--ink);
+        font-weight: 800;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 6px 20px rgb(0 0 0 / 25%);
+      }
+
+      .compare-caption {
+        margin: 18px 0 0;
+        color: #aaa99f;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      .included-grid {
+        display: grid;
+        gap: 10px;
+      }
+
+      .included-item {
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 22px;
+        background: var(--white);
+        transition: border-color 180ms ease, transform 180ms ease;
+      }
+
+      .included-item:hover {
+        border-color: var(--ink);
+        transform: translateY(-3px);
+      }
+
+      .included-icon {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: var(--ink);
+        background: var(--acid);
+        font-size: 17px;
+        font-weight: 800;
+      }
+
+      .included-icon svg {
+        width: 19px;
+        height: 19px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .included-item h3 {
+        max-width: 220px;
+        margin: 30px 0 0;
+        font-size: 19px;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      .pricing-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .price-card {
+        position: relative;
+        border: 1px solid #33332f;
+        border-radius: var(--radius);
+        padding: 28px;
+        background: #181816;
+      }
+
+      .price-card.popular {
+        border-color: var(--acid);
+        color: var(--ink);
+        background: var(--acid);
+      }
+
+      .popular-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border-radius: 999px;
+        padding: 6px 9px;
+        color: white;
+        background: var(--ink);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      .price-card h3 {
+        margin-bottom: 32px;
+        font-size: 23px;
+      }
+
+      .price {
+        margin-bottom: 7px;
+        font-family: "Syne", sans-serif;
+        font-size: clamp(33px, 9vw, 45px);
+        font-weight: 800;
+        letter-spacing: -0.06em;
+        white-space: nowrap;
+      }
+
+      .price-prefix {
+        display: block;
+        margin-bottom: 2px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .price-card > p {
+        min-height: 48px;
+        color: #aaa99f;
+      }
+
+      .price-card.popular > p {
+        color: #44443d;
+      }
+
+      .price-card ul {
+        display: grid;
+        gap: 11px;
+        margin: 25px 0 30px;
+        padding: 23px 0 0;
+        border-top: 1px solid #353531;
+        list-style: none;
+      }
+
+      .price-card.popular ul {
+        border-color: rgb(17 17 15 / 20%);
+      }
+
+      .price-card li::before {
+        content: "✓";
+        margin-right: 10px;
+        color: var(--acid);
+        font-weight: 800;
+      }
+
+      .price-card.popular li::before {
+        color: var(--ink);
+      }
+
+      .price-card .btn {
+        width: 100%;
+        border-color: #4a4a45;
+        color: white;
+        background: transparent;
+      }
+
+      .price-card.popular .btn {
+        border-color: var(--ink);
+        background: var(--ink);
+      }
+
+      .pricing-note {
+        max-width: 720px;
+        margin: 28px auto 0;
+        color: #cbcabe;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .about-grid {
+        display: grid;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .avatar {
+        width: 116px;
+        height: 116px;
+        display: grid;
+        place-items: center;
+        border: 2px solid var(--ink);
+        border-radius: 50%;
+        background: var(--acid);
+        box-shadow: 8px 8px 0 var(--ink);
+        font-family: "Syne", sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+      }
+
+      .about-copy h2 {
+        margin-bottom: 22px;
+        font-size: clamp(42px, 9vw, 76px);
+        line-height: 0.95;
+        letter-spacing: -0.055em;
+      }
+
+      .about-copy p {
+        max-width: 720px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(17px, 3vw, 21px);
+        line-height: 1.65;
+      }
+
+      .process-grid {
+        display: grid;
+      }
+
+      .process-step {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 18px;
+        padding: 27px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .process-step:last-child {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .process-number {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--ink);
+        border-radius: 50%;
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+      }
+
+      .process-step h3 {
+        margin: 4px 0 7px;
+        font-size: clamp(23px, 5vw, 31px);
+        letter-spacing: -0.04em;
+      }
+
+      .process-step p {
+        max-width: 470px;
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .faq-list {
+        max-width: 850px;
+        margin-left: auto;
+      }
+
+      details {
+        border-top: 1px solid #3c3c37;
+      }
+
+      details:last-child {
+        border-bottom: 1px solid #3c3c37;
+      }
+
+      summary {
+        position: relative;
+        padding: 24px 44px 24px 0;
+        font-family: "Syne", sans-serif;
+        font-size: clamp(18px, 4vw, 23px);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::after {
+        content: "+";
+        position: absolute;
+        top: 18px;
+        right: 2px;
+        color: var(--acid);
+        font-family: "DM Sans", sans-serif;
+        font-size: 31px;
+        font-weight: 400;
+        transition: transform 180ms ease;
+      }
+
+      details[open] summary::after {
+        transform: rotate(45deg);
+      }
+
+      details p {
+        max-width: 650px;
+        margin: -6px 0 24px;
+        color: #aaa99f;
+      }
+
+      .cta-section {
+        padding: 82px 0 112px;
+        background: var(--acid);
+      }
+
+      .cta-grid {
+        display: grid;
+        gap: 42px;
+      }
+
+      .cta-copy h2 {
+        max-width: 690px;
+        margin-bottom: 23px;
+        font-size: clamp(48px, 12vw, 96px);
+        line-height: 0.88;
+        letter-spacing: -0.07em;
+      }
+
+      .cta-copy p {
+        max-width: 460px;
+        color: #45453d;
+        font-size: 18px;
+      }
+
+      .quote-form {
+        display: grid;
+        gap: 12px;
+        border-radius: var(--radius);
+        padding: 22px;
+        background: var(--white);
+        box-shadow: 12px 12px 0 var(--ink);
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .field-row {
+        display: grid;
+        gap: 12px;
+      }
+
+      label {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        outline: none;
+        padding: 13px 14px;
+        color: var(--ink);
+        background: #f8f7f2;
+        transition: border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: var(--ink);
+        box-shadow: 0 0 0 3px rgb(223 255 63 / 75%);
+      }
+
+      textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+
+      .form-note {
+        margin: 2px 0 0;
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .form-success {
+        display: none;
+        border-radius: 8px;
+        padding: 12px;
+        background: #eff9df;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      footer {
+        color: white;
+        background: var(--ink);
+      }
+
+      .footer-inner {
+        display: grid;
+        gap: 32px;
+        padding: 48px 0 100px;
+      }
+
+      .footer-brand {
+        font-size: 36px;
+      }
+
+      .footer-inner p {
+        max-width: 360px;
+        margin: 10px 0 0;
+        color: #99998f;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 11px;
+      }
+
+      .footer-links a {
+        width: fit-content;
+        border-bottom: 1px solid #55554f;
+        font-weight: 700;
+      }
+
+      .copyright {
+        padding: 18px 0;
+        border-top: 1px solid #33332f;
+        color: #777770;
+        font-size: 12px;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        right: 14px;
+        bottom: 14px;
+        left: 14px;
+        z-index: 15;
+        min-height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--ink);
+        border-radius: 999px;
+        color: var(--ink);
+        background: var(--acid);
+        box-shadow: 0 7px 0 var(--ink);
+        font-weight: 800;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(25px);
+        transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (min-width: 700px) {
+        .wrap {
+          width: min(calc(100% - 64px), var(--max));
+        }
+
+        .section {
+          padding: 120px 0;
+        }
+
+        .nav-links {
+          display: flex;
+        }
+
+        .hero {
+          min-height: 850px;
+          padding-top: 160px;
+        }
+
+        .hero::after {
+          top: -80px;
+          right: -120px;
+          width: 500px;
+          height: 500px;
+          border-width: 100px;
+        }
+
+        .hero-bottom {
+          grid-template-columns: 1fr auto;
+          align-items: end;
+        }
+
+        .problem-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .problem-card {
+          min-height: 330px;
+          padding: 34px;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .case-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .site {
+          height: 300px;
+        }
+
+        .site-hero {
+          height: 262px;
+          padding: 30px;
+        }
+
+        .site-hero b {
+          max-width: 300px;
+          font-size: 35px;
+        }
+
+        .section-head.split {
+          grid-template-columns: 1.4fr 0.6fr;
+          align-items: end;
+        }
+
+        .included-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .included-item {
+          min-height: 185px;
+        }
+
+        .pricing-grid {
+          grid-template-columns: repeat(3, 1fr);
+          align-items: stretch;
+        }
+
+        .about-grid {
+          grid-template-columns: 150px 1fr;
+          gap: 60px;
+        }
+
+        .price-card {
+          display: flex;
+          flex-direction: column;
+          padding: 33px;
+        }
+
+        .price-card .btn {
+          margin-top: auto;
+        }
+
+        .process-step {
+          grid-template-columns: 90px 1fr;
+          padding: 38px 0;
+        }
+
+        .process-number {
+          width: 52px;
+          height: 52px;
+        }
+
+        .cta-grid {
+          grid-template-columns: 1.05fr 0.95fr;
+          align-items: center;
+        }
+
+        .field-row {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .quote-form {
+          padding: 32px;
+        }
+
+        .footer-inner {
+          grid-template-columns: 1fr auto;
+          align-items: end;
+          padding-bottom: 50px;
+        }
+
+        .mobile-cta {
+          display: none;
+        }
+
+        .footer-inner {
+          padding-bottom: 48px;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .section-head {
+          margin-bottom: 60px;
+        }
+
+        .project-visual {
+          padding: 20px 20px 0;
+        }
+
+        .included-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .included-item:nth-child(1),
+        .included-item:nth-child(8) {
+          grid-column: span 2;
+        }
+
+        .process-step {
+          grid-template-columns: 110px 1fr 300px;
+          align-items: center;
+        }
+
+        .process-step p {
+          grid-column: 3;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav wrap" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Yuvraj home">Yuvraj<span class="brand-dot">.</span></a>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-acid" href="#quote">Get a quote</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="eyebrow">Websites for local service businesses</div>
+            <h1>Turn good work into <span>booked jobs.</span></h1>
+          </div>
+          <div class="hero-bottom">
+            <div>
+              <p class="hero-copy">
+                I’m Yuvraj. I design sharp, fast websites that make it easy for local customers to call,
+                trust you, and request a quote.
+              </p>
+              <div class="hero-note"><span class="pulse"></span><strong>Now taking on new projects</strong></div>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-acid btn-arrow" href="#quote">Get a quote</a>
+              <a class="btn btn-ghost" href="#work">See my work ↓</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Cleaning</span><span>Plumbing</span><span>HVAC</span><span>Landscaping</span
+          ><span>Pressure washing</span><span>Roofing</span><span>Cleaning</span><span>Plumbing</span
+          ><span>HVAC</span><span>Landscaping</span><span>Pressure washing</span><span>Roofing</span>
+        </div>
+      </div>
+
+      <section class="section dark" aria-labelledby="problem-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">The real problem</span>
+            <h2 id="problem-title">A weak website makes a great business look risky.</h2>
+            <p>Your next customer is deciding in seconds. Give them fewer reasons to leave.</p>
+          </div>
+          <div class="problem-grid reveal">
+            <article class="problem-card">
+              <div class="number">01 / UNCLEAR</div>
+              <h3>No services.<br />No pricing cues.</h3>
+              <p>If people cannot quickly see what you do, they go back to Google.</p>
+            </article>
+            <article class="problem-card">
+              <div class="number">02 / HARD WORK</div>
+              <h3>No fast way<br />to get a quote.</h3>
+              <p>Every extra tap between interest and contact costs you a possible job.</p>
+            </article>
+            <article class="problem-card">
+              <div class="number">03 / BAD FIRST LOOK</div>
+              <h3>Slow and clumsy<br />on a phone.</h3>
+              <p>Most local searches are mobile. Your site should feel built for them.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+          <div class="section-head split reveal">
+            <div>
+              <span class="eyebrow">Real-business concepts</span>
+              <h2 id="work-title">A sharper path from search to quote.</h2>
+            </div>
+            <p>Concept redesigns based only on publicly available business information.</p>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-study reveal">
+              <div class="case-visual">
+                <div class="browser">
+                  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <div class="site real-site anita-site">
+                    <div class="site-nav">
+                      <span class="site-logo">ANITA'S CLEANING CORP</span>
+                      <span>Services &nbsp; Reviews</span>
+                      <span class="site-button">Get a quote</span>
+                    </div>
+                    <div class="site-hero">
+                      <small>Charlotte, NC · 4.9 stars · 70 Google reviews</small>
+                      <b>Cleaning made clear.</b>
+                      <p>Residential, commercial, and move-in/move-out cleaning.</p>
+                      <span class="mini-cta">Request a quote →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-info">
+                <div class="case-title-row">
+                  <h3>Anita's Cleaning Corp</h3>
+                  <span class="case-location">Charlotte, NC</span>
+                </div>
+                <p class="case-fact">
+                  <strong>Gap found</strong>
+                  <span>No prices and no online quote form; estimates by phone only.</span>
+                </p>
+                <p class="case-fact">
+                  <strong>What I changed</strong>
+                  <span>Made services easier to scan and added clear pricing and online quote paths.</span>
+                </p>
+                <p class="case-disclaimer">
+                  Concept redesign built from public information. Not affiliated with Anita's Cleaning Corp.
+                </p>
+              </div>
+            </article>
+
+            <article class="case-study reveal">
+              <div class="case-visual">
+                <div class="browser">
+                  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <div class="site real-site phoenix-site">
+                    <div class="site-nav">
+                      <span class="site-logo">PHOENIX CAR SOLUTIONS</span>
+                      <span>Services &nbsp; Reviews</span>
+                      <span class="site-button">Get a quote</span>
+                    </div>
+                    <div class="site-hero">
+                      <small>Phoenix, AZ · 5.0 stars · 84 Google reviews</small>
+                      <b>A clearer next step.</b>
+                      <p>Explore services, pricing, and a faster way to request a quote.</p>
+                      <span class="mini-cta">Request a quote →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case-info">
+                <div class="case-title-row">
+                  <h3>Phoenix Car Solutions</h3>
+                  <span class="case-location">Phoenix, AZ</span>
+                </div>
+                <p class="case-fact">
+                  <strong>Gap found</strong>
+                  <span>One-page site, no prices, and no quote form.</span>
+                </p>
+                <p class="case-fact">
+                  <strong>What I changed</strong>
+                  <span>Restructured the homepage with space for services, pricing, and an online quote form.</span>
+                </p>
+                <p class="case-disclaimer">
+                  Concept redesign built from public information. Not affiliated with Phoenix Car Solutions.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="concepts-title">
+        <div class="wrap">
+          <div class="section-head split reveal">
+            <div>
+              <span class="eyebrow">Selected concepts</span>
+              <h2 id="concepts-title">Built for the way local customers choose.</h2>
+            </div>
+            <p>Four directions. Four industries. Every concept is designed around trust and a clear next step.</p>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="project-card reveal">
+              <div class="project-visual">
+                <div class="browser">
+                  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <div class="site clean-site">
+                    <div class="site-nav">
+                      <span class="site-logo">NEATLY.</span><span>Services &nbsp; Reviews &nbsp; About</span
+                      ><span class="site-button">Get a quote</span>
+                    </div>
+                    <div class="site-hero">
+                      <small>Trusted local cleaners</small>
+                      <b>Come home to clean.</b>
+                      <p>Reliable home cleaning with easy online estimates.</p>
+                      <span class="mini-cta">Get my estimate →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <h3>Home cleaning</h3>
+                  <span class="concept-tag">Concept project</span>
+                </div>
+                <ul class="feature-list">
+                  <li>Service menu</li>
+                  <li>Estimate form</li>
+                  <li>Review highlights</li>
+                </ul>
+                <a class="project-link" href="#quote" aria-label="Get a website like this home cleaning concept">Get one like this</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual">
+                <div class="browser">
+                  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <div class="site plumb-site">
+                    <div class="site-nav">
+                      <span class="site-logo">FLOW/PRO</span><span>Repairs &nbsp; Installations &nbsp; Areas</span
+                      ><span class="site-button">Call now</span>
+                    </div>
+                    <div class="site-hero">
+                      <small>Fast help. Fair pricing.</small>
+                      <b>Your leak stops here.</b>
+                      <p>Local plumbing help when you need it most.</p>
+                      <span class="mini-cta">Book a plumber →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <h3>Plumbing</h3>
+                  <span class="concept-tag">Concept project</span>
+                </div>
+                <ul class="feature-list">
+                  <li>Emergency call</li>
+                  <li>Service areas</li>
+                  <li>Booking form</li>
+                </ul>
+                <a class="project-link" href="#quote" aria-label="Get a website like this plumbing concept">Get one like this</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual">
+                <div class="browser">
+                  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <div class="site land-site">
+                    <div class="site-nav">
+                      <span class="site-logo">WILDROOT</span><span>Projects &nbsp; Services &nbsp; Process</span
+                      ><span class="site-button">Start a project</span>
+                    </div>
+                    <div class="site-hero">
+                      <small>Outdoor spaces, done right</small>
+                      <b>Love where you live.</b>
+                      <p>Thoughtful landscaping for hard-working homes.</p>
+                      <span class="mini-cta">Plan my yard →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <h3>Landscaping</h3>
+                  <span class="concept-tag">Concept project</span>
+                </div>
+                <ul class="feature-list">
+                  <li>Project gallery</li>
+                  <li>Service list</li>
+                  <li>Quote builder</li>
+                </ul>
+                <a class="project-link" href="#quote" aria-label="Get a website like this landscaping concept">Get one like this</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual">
+                <div class="browser">
+                  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <div class="site wash-site">
+                    <div class="site-nav">
+                      <span class="site-logo">BLAST.</span><span>Residential &nbsp; Commercial &nbsp; Results</span
+                      ><span class="site-button">Free quote</span>
+                    </div>
+                    <div class="site-hero">
+                      <small>Pressure washing specialists</small>
+                      <b>Make it look new again.</b>
+                      <p>Serious cleaning power. Zero hassle.</p>
+                      <span class="mini-cta">Get a free quote →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <h3>Pressure washing</h3>
+                  <span class="concept-tag">Concept project</span>
+                </div>
+                <ul class="feature-list">
+                  <li>Before & after</li>
+                  <li>Instant quote</li>
+                  <li>Click to call</li>
+                </ul>
+                <a class="project-link" href="#quote" aria-label="Get a website like this pressure washing concept">Get one like this</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" aria-labelledby="compare-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">The difference</span>
+            <h2 id="compare-title">From online brochure to quote machine.</h2>
+            <p>Drag the slider. Same business. A much stronger reason to get in touch.</p>
+          </div>
+          <div class="compare reveal" id="compare">
+            <div class="compare-side compare-before">
+              <div class="compare-content">
+                <div class="before-box">
+                  <h3>Your Pressure Washing Business</h3>
+                  <p>We pressure wash driveways and houses. Call us for more information.</p>
+                  <button type="button">Contact Us</button>
+                </div>
+              </div>
+              <span class="compare-label label-before">Before</span>
+            </div>
+            <div class="compare-side compare-after" id="compareAfter">
+              <div class="compare-content">
+                <div class="after-layout">
+                  <small>Local pressure washing</small>
+                  <h3>Your property. Bright again.</h3>
+                  <p>Fast quotes, clear services, and proof of work—right where customers need it.</p>
+                  <span>Get a free quote →</span>
+                </div>
+              </div>
+              <span class="compare-label label-after">After</span>
+            </div>
+            <div class="compare-line" id="compareLine">
+              <span class="compare-handle">↔</span>
+            </div>
+            <input
+              class="compare-range"
+              id="compareRange"
+              type="range"
+              min="10"
+              max="90"
+              value="62"
+              aria-label="Compare plain website and quote-ready website"
+            />
+          </div>
+          <p class="compare-caption">Drag left and right to compare</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="included-title">
+        <div class="wrap">
+          <div class="section-head split reveal">
+            <div>
+              <span class="eyebrow">What’s included</span>
+              <h2 id="included-title">Everything your customer needs to say yes.</h2>
+            </div>
+            <p>No filler. Just the pages and features that help local people trust you and take action.</p>
+          </div>
+          <div class="included-grid reveal">
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h12M4 17h8"/><path d="M17 15v6m-3-3h6"/></svg></span><h3>Services & prices section</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m3 16 5-5 4 4 3-3 6 6M8 8h.01"/></svg></span><h3>Before-and-after gallery</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h5a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2h5M8 9h8M8 13h8M8 17h5"/><path d="M9 2h6v4H9z"/></svg></span><h3>Simple quote form</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><h3>Google reviews section</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Clear service areas</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 13h6l-1 9 9-13h-6z"/></svg></span><h3>Fast loading</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><h3>Mobile-friendly layout</h3></article>
+            <article class="included-item"><span class="included-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2c0 8.8 7.2 16 16 16a2 2 0 0 0 2-2v-3l-4-1-1.5 3c-4.2-1.7-7.6-5.1-9.3-9.3L9 7z"/></svg></span><h3>Click-to-call everywhere it matters</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="pricing" aria-labelledby="pricing-title">
+        <div class="wrap">
+          <div class="section-head split reveal">
+            <div>
+              <span class="eyebrow">Simple packages</span>
+              <h2 id="pricing-title">Pick the right starting point.</h2>
+            </div>
+            <p>Clear scope. No mystery fees.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <h3>Starter</h3>
+              <div class="price"><span class="price-prefix">Starting at</span>$399</div>
+              <p>A focused one-page site for a clear local offer.</p>
+              <ul>
+                <li>One custom page</li>
+                <li>Quote form</li>
+                <li>Click-to-call</li>
+                <li>Mobile-ready</li>
+              </ul>
+              <a class="btn" href="#quote">Choose Starter</a>
+            </article>
+            <article class="price-card popular reveal">
+              <span class="popular-badge">Most popular</span>
+              <h3>Standard</h3>
+              <div class="price"><span class="price-prefix">Starting at</span>$799</div>
+              <p>A complete site that answers questions and builds trust.</p>
+              <ul>
+                <li>Core custom pages</li>
+                <li>Reviews section</li>
+                <li>Project gallery</li>
+                <li>Basic local SEO</li>
+              </ul>
+              <a class="btn" href="#quote">Choose Standard</a>
+            </article>
+            <article class="price-card reveal">
+              <h3>Pro</h3>
+              <div class="price"><span class="price-prefix">Starting at</span>$1,499</div>
+              <p>A bigger sales tool for established service businesses.</p>
+              <ul>
+                <li>Expanded custom pages</li>
+                <li>Advanced quote form</li>
+                <li>Service area pages</li>
+                <li>Priority support</li>
+              </ul>
+              <a class="btn" href="#quote">Choose Pro</a>
+            </article>
+          </div>
+          <p class="pricing-note reveal">
+            Pay only if it solves your problem. You approve the design before it goes live.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div class="avatar reveal" aria-label="Yuvraj avatar placeholder">Y</div>
+          <div class="about-copy reveal">
+            <span class="eyebrow">About</span>
+            <h2 id="about-title">Who's behind this</h2>
+            <p>
+              I'm Yuvraj. I've worked on projects for local businesses, finding what costs them customers online
+              and fixing it. I take on a small number of projects at a time, so you work with me directly, not an
+              agency. I reply to every message within 24 hours, usually faster.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="process-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">How it works</span>
+            <h2 id="process-title">From first chat to live site.</h2>
+          </div>
+          <div class="process-grid reveal">
+            <article class="process-step">
+              <span class="process-number">01</span>
+              <h3>Tell me about your business.</h3>
+              <p>Share your services, service area, photos, and what makes customers choose you.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">02</span>
+              <h3>I build it.</h3>
+              <p>I write, design and build your site around one goal: more quote requests. Timeline depends on your project.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">03</span>
+              <h3>You go live and get quotes.</h3>
+              <p>After your final approval, the site goes live and starts working for your business.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="faq" aria-labelledby="faq-title">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2 id="faq-title">The usual questions.</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary>How much does a website cost?</summary>
+              <p>Choose a package above as a starting point. Your final quote depends on the number of pages and features you need.</p>
+            </details>
+            <details>
+              <summary>How long will it take?</summary>
+              <p>The timeline depends on your project. I’ll confirm the schedule before work begins.</p>
+            </details>
+            <details>
+              <summary>Can I ask for changes?</summary>
+              <p>Yes. Each package includes a clear revision round so we can get the details right before launch.</p>
+            </details>
+            <details>
+              <summary>Do you handle hosting?</summary>
+              <p>Yes. I can set up reliable hosting for you, or connect the finished site to hosting you already own.</p>
+            </details>
+            <details>
+              <summary>Who owns the website?</summary>
+              <p>You do. Once the project is paid in full, the finished website and its content belong to you.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="quote" aria-labelledby="quote-title">
+        <div class="wrap cta-grid">
+          <div class="cta-copy reveal">
+            <span class="eyebrow">Ready when you are</span>
+            <h2 id="quote-title">Let’s build a site that pulls its weight.</h2>
+            <p>Tell me what you do. I’ll reply with the best next step and a clear quote.</p>
+            <p>
+              Prefer email?
+              <a href="mailto:yuvraj2028builder@gmail.com"><strong>yuvraj2028builder@gmail.com</strong></a>
+            </p>
+          </div>
+          <form class="quote-form reveal" id="quoteForm">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="business">Business</label>
+                <input id="business" name="business" type="text" placeholder="Business name" required />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Phone <span aria-hidden="true">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" placeholder="Your phone number" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">What do you need?</label>
+              <textarea id="message" name="message" placeholder="Tell me about your business and current website"></textarea>
+            </div>
+            <button class="btn" type="submit">Request my quote <span aria-hidden="true">→</span></button>
+            <div class="form-success" id="formSuccess" role="status">
+              Thanks, I'll reply within 24 hours.
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-inner">
+        <div>
+          <div class="brand footer-brand">Yuvraj<span class="brand-dot">.</span></div>
+          <p>Quote-ready websites for local service businesses that take their work seriously.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:yuvraj2028builder@gmail.com">yuvraj2028builder@gmail.com</a>
+          <a href="https://www.instagram.com/yuvraj.convsys/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="wrap copyright">© <span id="year"></span> Yuvraj. All rights reserved.</div>
+    </footer>
+
+    <a class="mobile-cta" href="#quote">Get a quote →</a>
+
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      reveals.forEach((item) => observer.observe(item));
+
+      const compareRange = document.getElementById("compareRange");
+      const compareAfter = document.getElementById("compareAfter");
+      const compareLine = document.getElementById("compareLine");
+      compareRange.addEventListener("input", (event) => {
+        const position = event.target.value + "%";
+        compareAfter.style.width = position;
+        compareLine.style.left = position;
+      });
+
+      document.getElementById("quoteForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const data = new FormData(form);
+        const name = data.get("name") || "";
+        const business = data.get("business") || "";
+        const phone = data.get("phone") || "Not provided";
+        const email = data.get("email") || "";
+        const message = data.get("message") || "";
+        const subject = `Website quote request from ${business}`;
+        const body = [
+          `Name: ${name}`,
+          `Business: ${business}`,
+          `Phone: ${phone}`,
+          `Email: ${email}`,
+          "",
+          "Message:",
+          message,
+        ].join("\n");
+
+        document.getElementById("formSuccess").style.display = "block";
+        window.location.href =
+          "mailto:yuvraj2028builder@gmail.com?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

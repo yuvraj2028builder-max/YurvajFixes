@@ -1,0 +1,10 @@
+{
+  "description": "Showcases quote-ready website concepts, services, pricing, and a quote form to help local service businesses find a web designer and attract more customer inquiries.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
